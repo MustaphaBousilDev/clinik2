@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+.active__links{
+    background-color: rgb(117, 184, 236);color:#fff;display: inline-block;
+    padding: 5px 10px;border-radius:20px;
+}
+
+.parent__den{
+    transition: .1s;
+    transition-delay: .2s;
+}
+.parent__den.actives{
+   
+        margin-top: 285px;
+        
+    }
+.containers{
+    padding: 40px 100px;
+    background-color: #eee;
+}
+.containers .main{
+    padding: 0 50px;
+}
+.containers .main .row{
+    display: flex;
+    justify-content: space-between;
+}
+.containers .main .row .img-holder{
+   background-image: url("../imgs/service_1_image.jpg"); 
+   /* overflow: hidden; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 30%;
+    
+    border-radius: 60px;
+    z-index: 1;
+    position: relative;
+}
+.gradient_de{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(255,255,255); */
+    border-radius: 60px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.1) 35%, rgba(82, 192, 227, 1) 100%);
+    z-index: 12;
+}
+.containers .main .row .img-holder h3{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 13;
+}
+.containers .main .row .img-holder .price{
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #50BFE2;
+    position: absolute;
+    bottom: -13%;
+    left: -7%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: #fff;
+    z-index: 100;
+}
+.containers .main .row .img-holder .price p:first-of-type{
+    font-size: 40px;
+}
+.move{
+    padding-left: 15%;
+}
+.containers .main .row .img-holder .price p:last-of-type{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.containers .main .row .text-holder{
+    background-color: #fff;
+    border-radius: 80px;
+    width: 64%;
+    padding: 60px 90px;
+}
+.containers .main .row .text-holder p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.containers .main .row .text-holder a{ 
+    background-color: #50BFE2;
+    text-decoration: none;
+    border-radius: 64px;
+    margin-top: 30px;
+    display: flex;
+    padding:20px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.containers .main .row .text-holder a .btn__app{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding:0;
+
+ 
+
+}
+.containers .main .last{
+    background-color: white;
+    padding: 30px ;
+    margin-top: 100px;
+    border-radius: 80px;
+
+}
+.containers .main .last p:first-of-type{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+.containers .main .last p:last-of-type{
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+/* responsive in mobile */
+@media screen and (max-width: 821px) {
+    .containers{
+        padding: 40px 10px;
+        background-color: #eee;
+    }
+    .containers .main{
+        padding: 0;
+    }
+    .containers .main .row .img-holder{
+        width: 80%;
+        height: 410px;
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .gradient_de{
+        border-radius: 30px;
+    }
+    .containers .main .row .img-holder h3 {
+        font-size: 1.1rem;
+    }
+
+    .containers .main .row .img-holder .price {
+        height: 110px;
+        width: 110px;
+        bottom: -10%;
+        left: -7%;
+    }
+
+    .containers .main .row .img-holder .price p:first-of-type{
+        font-size: 20px;
+    }
+    .containers .main .row .img-holder .price p:last-of-type{
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .containers .main .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .containers .main .row .text-holder{
+        border-radius: 25px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    .containers .main .row .text-holder p{
+        text-align: justify;
+        font-size: 12px;
+    }
+    .containers .main .row .text-holder a{ 
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .containers .main .row .text-holder a .btn__app{
+        width: 100%;
+        font-size: 17px;
+    }
+    .containers .main .last {
+        background-color: white;
+        padding: 15px;
+        border-radius: 20px;
+        width: 76%;
+        margin: 25px auto 0 auto;
+    }
+    .containers .main .last p:first-of-type {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .containers .main .last p:last-of-type {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+/* responsive in tablet */
+@media screen and ((min-width: 822px) and (max-width: 1600px)){
+    .containers{
+        padding: 40px 10px;
+        background-color: #eee;
+    }
+    .containers .main {
+        padding: 0 30px;
+    }
+    .containers .main .row .img-holder {
+        width: 34%;
+        height: 525px;
+        border-radius: 30px;
+    }
+    .gradient_de {
+        border-radius: 30px;
+    }
+    .containers .main .row .img-holder h3 {
+        font-size: 18px;
+    }
+    .containers .main .row .img-holder .price {
+        height: 140px;
+        width: 140px;
+    }
+    .containers .main .row .img-holder .price p:first-of-type {
+        font-size: 20px;
+    }
+    .containers .main .row .img-holder .price p:last-of-type {
+        font-size: 23px;
+    }
+    .containers .main .row .text-holder {
+        border-radius: 50px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .containers .main .row .text-holder p {
+        font-size: 18px;
+    }
+    .containers .main .row .text-holder a{ 
+        border-radius: 64px;
+        padding: 20px;
+    }
+    .containers .main .row .text-holder a .btn__app{
+        width: 100%;
+        font-size: 30px;
+    }
+    .containers .main .last {
+        background-color: white;
+        padding: 20px;
+        margin-top: 70px;
+        border-radius: 40px;
+    }
+    .containers .main .last p:first-of-type {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .containers .main .last p:last-of-type {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.service2-img{
+    background-image: url("../imgs/service_2_image.jpg") !important; 
+}

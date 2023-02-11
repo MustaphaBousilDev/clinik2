@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+.garanty{
+    padding:40px 50px;
+}
+.garanty h2{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.garanty p{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.garanty .content__app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.garanty .content__app .icon__app{
+    
+    width: 150px !important;
+    margin-bottom:30px;
+    height:150px !important;
+    
+}
+.garanty .content__app .icon__app.one{
+    background-image: url('../../imgs/samen_icon\ 3.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.garanty .content__app .icon__app.two {
+    background-image: url('../../imgs/secuur_icon\ 3.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.garanty .content__app .icon__app.three {
+    background-image: url('../../imgs/aandacht_icon\ 3.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.garanty .content__app .content__app_ga{
+    width: 80%;
+    margin:0  auto;
+    text-align: center;
+}
+@media screen and (min-width:1800px){
+    .garanty .content__app .icon__app{
+        width: 150px;
+        height: 150px;
+    }
+    .garanty .content__app .content__app_ga{
+        font-size: 30px;
+    }
+    .garanty p{
+        font-size: 30px;
+    }
+    .garanty h2{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:1600px){
+    .garanty .content__app .icon__app{
+        width: 150px;
+        height: 150px;
+    }
+    .garanty .content__app .content__app_ga{
+        font-size: 18px;
+    }
+    .garanty p{
+        font-size: 18px;
+    }
+    .garanty h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:800px){
+    .garanty{
+        padding: 40px 15px;
+        font-size: 14px;
+    }
+    .garanty .content__app .content__app_ga{
+        width: 100%;
+        text-align: justify;
+        font-size: 14px;
+    }
+    .garanty .icon__app{
+        width: 150px;
+        height: 120px;
+    }
+    .garanty p{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .garanty h2{
+        font-size: 20px;
+    }
+    .garanty p{
+        font-size: 15px;
+    }
+}

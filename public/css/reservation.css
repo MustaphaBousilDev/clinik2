@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.active__links{
+    background-color: rgb(117, 184, 236);color:#fff;display: inline-block;
+    padding: 5px 10px;border-radius:20px;
+}
+.active__links a{
+    color:#fff;
+}
+
+.resirvation__app{
+    padding: 70px 50px; 
+    background-image:url('../imgs/small_reflexzonetherapie_order.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    transition: .1s;
+    transition-delay: .2s;
+    
+} 
+.resirvation__app.actives{
+    margin-top: 285px;
+}
+
+.resirvation__app .shadow{
+    position: absolute;
+    top:0;left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 27%, rgba(255,255,255,0) 100%);
+}
+.resirvation__app h2{
+    text-align: center;
+    color:#fff;
+    position: relative;
+    font-size: 55px;
+    letter-spacing: -2px;
+    z-index: 1000;
+    font-weight: 600;
+}
+.resirvation__app .form form{
+    width: 60%;
+    margin: 10px auto;
+    position: relative;
+    z-index: 1000;
+}
+.resirvation__app .form form .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 5px 0;
+}
+.resirvation__app .form form .row .left{
+    width: 100%;
+    padding: 10px;
+}
+.resirvation__app .form form .row .left .label{
+    display: block;
+    font-size: 18px;
+    padding: 10px 25px;
+    color:#fff;
+    font-weight: 500;
+}
+.resirvation__app .form form .row .left .input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.resirvation__app .form form .field__check{
+    width: 100%;
+    margin-top: 25px;
+    background-color: rgb(59, 177, 245);
+    border-radius: 15px;
+    padding:20px;
+}
+.resirvation__app .form form .field__check p{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 25px;
+}
+.resirvation__app .form form .field__check .all__check{
+    width: 60%;
+    margin:5px auto;
+    display: flex;
+
+}
+.resirvation__app .form form .field__check .all__check .box_check{
+    display: flex;
+    width: calc(33.33% - 10px);
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+
+
+.resirvation__app .form form .field__check .all__check .box_check input[type='radio']{
+    width: 25px;height: 25px;
+    margin:10px auto;
+}
+.resirvation__app .form form .field__check .all__check .box_check label{
+    font-size: 18px;
+    font-weight: 500;
+    color:#fff;
+}
+.resirvation__app .form form .field__check .all__check .box_check  span{
+    font-weight: 500;
+    color:#fff;
+    font-size: 18px;
+}
+.resirvation__app .form form div.sub{
+    width: 100%;
+    margin-top: 15px;
+}
+.resirvation__app .form form .btn__submit{
+    margin-top: 15px;
+    width: 170px;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin: auto;
+    background-color: rgb(59, 177, 245);
+    color:#fff;
+    cursor: pointer;
+    display: block;
+    border-radius: 25px;
+}
+.resirvation__app .form form .notu__app{
+    margin-top: 40px;
+    padding:20px 20px;
+    border-radius:20px;
+    background-color: #fff;
+}
+.resirvation__app .form form .notu__app h4{
+    text-align: center;
+}
+.resirvation__app .form form .notu__app p{
+    text-align: center;
+}
+
+@media screen and (max-width:1400px){
+    .resirvation__app .form form{
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width:1080px){
+    .resirvation__app .form form{
+        width: 95%;
+        
+    }
+}
+
+@media screen and (max-width:800px){
+    .resirvation__app{
+        padding:30px 20px; 
+        
+        
+    } 
+    .resirvation__app .form form{
+        width: 90%;
+    }
+    .resirvation__app .form form .row{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 15px;
+    }
+
+    .resirvation__app .form form .row .left{
+        padding: 5px;
+    }
+    .resirvation__app .form form .row .left .label {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .resirvation__app .form form .row .left .input {
+        border-radius: 25px;
+        padding: 7px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .resirvation__app{
+        padding:30px 10px; 
+    } 
+    .resirvation__app .form form{
+        width: 95%;
+    }
+    .resirvation__app .form form .row{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 10px;
+    }
+
+    .resirvation__app .form form .row .left{
+        padding: 5px;
+    }
+    .resirvation__app .form form .row .left .label {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    .resirvation__app .form form .row .left .input {
+        border-radius: 25px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    .resirvation__app h2{
+        
+        font-size:25px;
+        letter-spacing: -2px;
+        
+    }
+    .resirvation__app .form form .field__check{
+        width: 100%;
+        margin-top: 25px;
+        background-color: rgb(59, 177, 245);
+        border-radius: 15px;
+        padding:20px;
+    }
+    .resirvation__app .form form .field__check p{
+        font-size: 22px;
+    }
+    .resirvation__app .form form .field__check .all__check{
+        width: 80%;
+        margin:5px auto;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .resirvation__app .form form .field__check .all__check .box_check{
+        display: flex;
+        width:100%;
+        margin-right:0;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .resirvation__app .form form .field__check .all__check .box_check input[type='radio']{
+        width: 30px;height:30px;
+    }
+    .resirvation__app .form form .field__check .all__check .box_check label{
+        font-size: 18px;
+        font-weight: 500;
+        color:#fff;
+    }
+    .resirvation__app .form form .field__check .all__check .box_check  span{
+        font-weight: 500;
+        color:#fff;
+        font-size: 18px;
+    }
+}

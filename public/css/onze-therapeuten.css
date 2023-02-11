@@ -1,0 +1,212 @@
+.about__app{
+    padding: 70px 50px; 
+    
+    background-image:url('../imgs/bg_yog-01.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    position: relative;
+    
+    transition: .1s;
+    transition-delay: .2s;
+    
+     
+}
+.active__links{
+    background-color: rgb(117, 184, 236);color:#fff;display: inline-block;
+    padding: 5px 10px;border-radius:20px;
+}
+
+.about__app.actives{
+    margin-top: 285px;
+    
+}
+.about__app .shadow{
+    position: absolute;
+    top:0;left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 27%, rgba(0,0,0,0.15) 100%);
+}
+.about__app .father__field h2{
+    text-align: center;
+    color:#fff;
+    position: relative;
+    z-index: 1000;
+    font-weight: 600;
+    font-size: 17px;
+}
+.main__h{
+    text-align: center;
+    color:#fff;
+    position: relative;
+    z-index: 1000;
+    font-weight: 600;
+    font-size: 25px;
+}
+.about__app .field{
+    position: relative;
+    z-index: 1000;
+    margin-top: 80px;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.about__app .field .header__field{
+    display: flex;
+    width:90%;
+    flex-wrap: nowrap;
+}
+.about__app .field .header__field .persone{
+    /*width:35%;*/
+    width: 200px;
+    height: 200px;
+    
+    background-image: url('../imgs/therapist_icon_2-01.png');
+    background-position: center;
+    margin-right: 15px;
+    background-size: cover;
+}
+.about__app .field .header__field .persone img{
+    width: 100%;
+}
+.about__app .field .header__field .info{
+    padding-top: 20px;
+}
+.about__app .field .header__field .info p{
+    margin: 0;
+    color:#fff;
+}
+.about__app .field .body__field{
+    margin-top: 15px;
+}
+.about__app .field .body__field p{
+    margin:0;
+    font-size: 16px;
+    color:#fff;
+}
+.about__app .father__field{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+@media screen and (max-width:1080px){
+    .about__app .field .header__field h2{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:800px){
+    .about__app .field .header__field .persone{
+        /*width:35%;*/
+        width: 200px;
+        height: 200px;
+        
+       
+    }
+    .about__app .father__field{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        
+    }
+    .content__app{
+        width: 90%;
+        margin: auto;
+    }
+    .info h2{
+        text-align: start;
+    }
+    .info p{
+        text-align: start;
+        margin-left:0;
+    }
+    .about__app h2{
+        font-size: 22px;
+    }
+    .about__app .field{
+        padding:0;
+        margin-top: 10px;
+    }
+    .about__app .field .header__field{
+       flex-wrap: wrap;
+       flex-direction: column;
+      
+       margin: auto;
+       width:95%;
+       
+    }
+   
+    
+    .about__app .field .header__field .persone{
+        width:40%;
+        
+        margin:0;
+        background-size: cover;
+    }
+    .about__app .field .header__field .persone img{
+        width: 100%;
+    }
+    .about__app .field .header__field .info{
+        margin-bottom: 15px;
+    }
+    .about__app .field .header__field .info h2{
+        font-size:25px;
+        font-weight: bold;
+    }
+    .about__app .field .header__field .info p{
+        font-size:13px;
+        font-weight: normal;
+        width: 50%;
+        margin: 0;
+    }
+    .about__app .field .body__field p{
+        font-size: 16px
+    }
+
+    .about__app .field .body__field{
+        width: 95%;
+        margin: auto;
+    }
+    
+}
+
+
+@media screen and (max-width:600px){
+    .about__app .field .header__field .persone{
+        /*width:35%;*/
+        width: 200px;
+        height: 200px;
+        
+       
+    }
+    .about__app .field .body__field p{
+        font-size: 13px
+    }
+    .about__app .field .header__field .info h2{
+        font-size:18px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .about__app .field .body__field p{
+       
+        font-size: 13px;
+
+    }
+    .about__app .field .header__field .info p{
+        font-size:13px;
+        font-weight: normal;
+        width: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    .about__app{
+        padding:40px 5px; 
+        
+       
+        
+    }
+    .about__app .field .body__field{
+        width: 95%;
+        margin: auto;
+    }
+}

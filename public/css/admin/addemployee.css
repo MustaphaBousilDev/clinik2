@@ -1,0 +1,8 @@
+.dashboard .dash-content .add__form .top__ .quantity{
+    display: flex;
+    gap: 80px;
+    width: 100%;
+}
+.dashboard .dash-content .add__form .top__ .quantity .pro{
+    width: 40%;
+}

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.active__links{
+    background-color: rgb(117, 184, 236);color:#fff;display: inline-block;
+    padding: 5px 10px;border-radius:20px;
+}
+main{
+        background-color: #eee;
+}
+a{
+    text-decoration: none;
+}
+.contact__us{
+    transition: .1s;
+    transition-delay: .2s;
+}
+.contact__us.actives{
+    margin-top: 285px;
+    
+}
+.content{
+    width: 58%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.content .heading{
+    width: 100%;
+    padding: 40px;
+}
+.content .heading .img{
+    width: 300px;
+    height: 75px;
+    margin: 0 auto;
+    background-image: url("../imgs/contact_us.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .form{
+    
+}
+.content .form form{
+
+}
+.content .form form .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 0;
+}
+.content .form form .row .left{
+    width: 100%;
+    padding: 10px;
+}
+.content .form form .row .left .label{
+    display: block;
+    font-size: 17px;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+.content .form form .row .left .input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 16px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content .form form .next{
+    width: 100%;
+    padding: 10px;
+    padding: 20px 0;
+}
+.content .form form .next .button_sub{
+    border:none;
+    outline: none;
+    background-color: rgb(117, 184, 236);
+    color:#fff;
+    border-radius:30px;
+    cursor: pointer;
+    transition:.3s;
+    padding:15px 40px;
+    font-size: 22px;
+    opacity: .9;
+}
+.content .form form .next .button_sub:hover{
+    opacity: 1;
+}
+.content .form form .next .label{
+    display: block;
+    font-size: 17px;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+.content .form form .next .input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 16px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 821px){
+    .content .form form .next .button_sub{
+        
+        border-radius:15px;
+        padding:7px 12px;
+        
+        font-size: 12px;
+    }
+    .content {
+        width: 60%;
+        padding: 20px 0;
+    }
+    .content .heading{
+        padding: 10px;
+    }
+    .content .heading .img{
+        width: 150px;
+        height: 40px;
+    }
+    .content .form form .row{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 15px;
+    }
+
+    .content .form form .row .left{
+        padding: 5px;
+    }
+    .content .form form .row .left .label {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .content .form form .row .left .input {
+        border-radius: 25px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    .content .form form .next{
+        padding: 5px 15PX;
+    }
+    .content .form form .next .label{
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .content .form form .next .input{
+        border-radius: 25px;
+        padding: 7px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px){
+   
+    .content {
+        width: 80%;
+    }
+}
+@media screen and ((min-width: 822px) and (max-width: 1600px)){
+    .content{
+        width: 56%;
+    }
+    .content .form form .next .button_sub{
+        
+        border-radius:25px;
+        padding:10px 20px;
+        font-size: 22px;
+    }
+    .content .heading{
+        padding: 10px;
+    }
+    .content .heading .img {
+        width: 280px;
+        height: 75px;
+    }
+    .content .form form .row{
+        gap: 30px;
+        padding: 10px 15px;
+    }
+
+    .content .form form .row .left{
+        padding: 5px;
+    }
+    .content .form form .row .left .label {
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    .content .form form .row .left .input {
+        border-radius: 25px;
+        padding: 12px;
+        font-size: 15px;
+    }
+    .content .form form .next{
+        padding: 12px 15PX;
+    }
+    .content .form form .next .label{
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    .content .form form .next .input{
+        border-radius: 25px;
+        padding: 12px;
+        font-size: 15px;
+    }
+}

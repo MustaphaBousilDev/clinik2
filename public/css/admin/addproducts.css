@@ -1,0 +1,125 @@
+
+.top__{
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    padding: 30px;
+}
+
+.top__ .pro__unity,
+.quantity{
+    display: flex;
+    gap: 80px;
+}
+.quantity .pro{width: 40%;}
+.pro__unity .pro{
+    width: 40%;
+}
+
+ .pro .label__{
+    display: block;
+    color: rgb(184, 176, 176);
+    padding: 3px 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+ .pro .input__{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 15px 25px;
+    width: 90%;
+}
+.pro .select__{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 15px 25px;
+    width: 90%;
+}
+.pro__unity .pro .select__ option{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.save__bottom{
+    
+}
+.save__bottom .save{ 
+    border: none;
+    outline: none;
+    padding: 15px 80px;
+    background-color: rgb(70, 187, 216);
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.save__bottom{
+    align-self: flex-end;
+}
+
+.save__bottom .save:hover{
+    background-color: rgb(56, 169, 197);
+}
+.save__bottom .cancel{ 
+    border: none;
+    outline: none;
+    padding: 15px 80px;
+    background-color: #fff;
+    border-radius: 30px;
+    color: rgb(184, 176, 176);
+    cursor: pointer;
+}
+.save__bottom .cancel:hover{
+    background-color:rgb(240, 233, 233);
+}
+
+@media screen and (max-width: 1400px){
+    .pro__unity .pro{
+        width: 50%;
+    }
+    .dashboard .dash-content {
+        padding: 150px 5%;
+        background-color: rgb(245, 243, 243);
+    }
+}
+@media screen and (max-width: 1000px){
+
+    .top__ .pro__unity{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    .pro__unity .pro{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .dashboard .dash-content {
+        padding: 150px 5%;
+        background-color: rgb(245, 243, 243);
+    }
+    .quantity{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .quantity .pro{width: 100%;}
+    .save__bottom{
+        align-self: center;
+    }
+    
+}
+
+
+
+.small__header{
+    color: rgb(184, 176, 176);
+    padding: 3px 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
