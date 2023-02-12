@@ -29,11 +29,11 @@
             </div>
             <div class="links-ul">
                 <div class="lists__app">
-                    <span class="active__links"><a href="/">home</a></span>
-                    <span><a href="{{route('natuurgerichte-principes.index')}}">natuurgerichte principes</a></span>
-                    <span><a href="{{route('onze-diensten.index')}}">onze diensten</a></span>
-                    <span><a href="{{route('onze-therapeuten.index')}}">onze therapeuten</a></span>
-                    <span><a href="{{route('contact.index')}}">contact</a></span>
+                    <span <?= $_SERVER['REQUEST_URI']==='/' ?  'class="active__links"' : ' '  ; ?> ><a href="/">home</a></span>
+                    <span <?= $_SERVER['REQUEST_URI']==='/natuurgerichte-principes' ?  'class="active__links"' : ' '  ; ?>><a href="{{route('natuurgerichte-principes.index')}}">natuurgerichte principes</a></span>
+                    <span <?= $_SERVER['REQUEST_URI']==='/onze-diensten' ?  'class="active__links"' : ' '  ; ?>><a href="{{route('onze-diensten.index')}}">onze diensten</a></span>
+                    <span <?= $_SERVER['REQUEST_URI']==='/onze-therapeuten' ?  'class="active__links"' : ' '  ; ?>><a href="{{route('onze-therapeuten.index')}}">onze therapeuten</a></span>
+                    <span <?= $_SERVER['REQUEST_URI']==='/contact' ?  'class="active__links"' : ' '  ; ?>><a href="{{route('contact.index')}}">contact</a></span>
                     @auth 
                     <span>{{Auth::user()->name}}/
                         
@@ -115,7 +115,7 @@
                     @if(Route::has('login'))
                     @auth 
                         @if(Auth::user()->utype==='ADM' || Auth::user()->utype==='EMP')
-                        <li><a href="{{route('admin.dashboard')}}">Admin</a></li>
+                        <li><a style="color:#fff;" href="{{route('admin.dashboard')}}">Admin</a></li>
                         @endif 
                     @endif 
                     @endif 

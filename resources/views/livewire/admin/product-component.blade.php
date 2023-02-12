@@ -1,7 +1,7 @@
 <style>
     
 </style>
-<div class="dash-content" style="height:100vh">
+<div class="dash-content">
     @foreach($products as $product)
     <div class="products">
         <div class="content__product">
@@ -15,8 +15,8 @@
         </div>
         <div class="actions">
             <a style="text-decoration:none;" href="{{route('admin.products.edit',['id'=>$product->id])}}"><i class="bi bi-gear-fill"></i></a>
-            <a href="{{ url('/admin/Products/delete/'.$product->id) }}"><i  class="bi bi-trash3-fill"></i></a>
-            <a style="text-decoration:none;"><i class="bi bi-eye"></i></a>
+            <a style="text-decoration:none;" href="{{ url('/admin/Products/delete/'.$product->id) }}"><i class="bi bi-trash3-fill"></i></a>
+            <a style="text-decoration:none;" href="{{route('show.product',$product->id)}}"><i class="bi bi-eye"></i></a>
         </div>
     </div>
     @endforeach

@@ -1,6 +1,6 @@
-<div class="dash-content" style="height: 100vh;">
+<div class="dash-content">
     <div class="add__form">
-        <form action="{{route("admin.employee.save")}}" method="POST">
+        <form action="{{route('admin.employee.save')}}" method="POST">
             @csrf
             @if($errors->any())
                 @foreach($errors->all() as $error)

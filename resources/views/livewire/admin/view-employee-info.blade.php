@@ -1,4 +1,4 @@
-<div class="dash-content" style="height: 100vh;">
+<div class="dash-content" >
     <div class="add__form">
 
             <div class="top__">

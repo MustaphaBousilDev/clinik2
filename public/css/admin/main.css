@@ -83,6 +83,10 @@ header.close  .menu-items{
     padding-left: 0px;
    
 }
+header .log__admin{display: block;}
+header.close .log__admin{
+    display: none;
+}
 header .logo-name{
     display: flex;
     align-items: center;

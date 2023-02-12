@@ -11,6 +11,7 @@ if(getMode && getMode ==="dark"){
 let getStatus = localStorage.getItem("status");
 if(getStatus && getStatus ==="close"){
     sidebar.classList.toggle("close");
+    
 }
 
 modeToggle.addEventListener("click", () =>{

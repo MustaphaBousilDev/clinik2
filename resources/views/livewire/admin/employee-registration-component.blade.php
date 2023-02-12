@@ -38,10 +38,9 @@
             @endif
             @foreach($employees as $employee)
                 <div class="products" style="">
-                        <input type="checkbox">
                         <div class="content__product" style="width: 70%;padding-right:20px ;">
                             <div>
-                                <img src="asset('imgs/admin/db_cl-05.png')">
+                                <img src="{{asset('imgs/admin/db_cl-05.png')}}">
                                 <p>{{$employee->name}}</p>
                             </div>
                             <div style="justify-content: flex-end;">
@@ -49,18 +48,16 @@
                             </div>
                         </div>
                         <div class="actions">
-                            <a href="{{ route('admin.employee.edit', $employee->id) }}" class="text-light text-decoration-none"><i class="bi bi-gear-fill"></i></a>
+                            <a style="text-decoration:none" href="{{ route('admin.employee.edit', $employee->id) }}" class="text-light text-decoration-none"><i class="bi bi-gear-fill"></i></a>
                             <form action="{{ route('admin.employee.destroy', $employee->id) }}" method="post" >
                                 @csrf
                                 @method('delete')
-                                <button type="submit"><i class="bi bi-trash3-fill"></i></button>
+                                <button type="submit" style="border:none"><i class="bi bi-trash3-fill"></i></button>
                             </form>
-                            <a href="{{ route('admin.employee.view', $employee->id) }}" class="text-light text-decoration-none"><i class="bi bi-eye"></i></a>
-
-                            <i class="bi bi-printer"></i>
+                            <a style="text-decoration:none" href="{{ route('admin.employee.view', $employee->id) }}" class="text-light text-decoration-none"><i class="bi bi-eye"></i></a>
                         </div>
                         </div>
     @endforeach
-                    <a href="{{route('admin.employe.add')}}" class="btn__add">Add New</a>
+                    <a style="text-decoration:none" href="{{route('admin.employe.add')}}" class="btn__add">Add New</a>
                 </div>
 

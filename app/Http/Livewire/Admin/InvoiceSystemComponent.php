@@ -8,6 +8,6 @@ class InvoiceSystemComponent extends Component
 {
     public function render()
     {
-        return view('livewire.admin.invoice-system-component')->layout('layouts.base');
+        return view('livewire.admin.res-system-component')->layout('layouts.base');
     }
 }

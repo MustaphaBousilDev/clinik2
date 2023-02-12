@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ProductShowController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\Admin\Showproductcomponent;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\NatuurgerichtePrincipes;
 use App\Http\Livewire\OnzeDiensten;
@@ -12,6 +14,9 @@ use App\Http\Livewire\ReservationComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\ProductComponent;
+use App\Http\Livewire\Admin\ServiceComponent;
+use App\Http\Livewire\Admin\ServiceAddComponent;
+use App\Http\Livewire\Admin\InvoiceSystemeReelComponent;
 use App\Http\Livewire\Admin\EmployeeRegistrationComponent;
 use App\Http\Livewire\Admin\AddProductComponent;
 use App\Http\Livewire\Admin\AddCustomerComponent;
@@ -64,13 +69,20 @@ Route::middleware(['onlyauthadmin'])->group(function () {
     Route::get('/admin/Products/add', AddProductComponent::class)->name('admin.products.add');
     Route::get('/admin/Products/edit/{id}', EditProductComponent::class)->name('admin.products.edit');
     Route::get('/admin/Products/delete/{id}', [ProductComponent::class, 'DeleteBrand']);
-    Route::get('/admin/CustomerSystemeManagement/add', AddCustomerComponent::class)->name('admin.customer.add');
+    Route::get('/admin/Products/show/{id}',Showproductcomponent::class)->name('show.product');
     Route::get('/admin/EmpolyeeRegistration/add', AddEmployeeComponent::class)->name('admin.employe.add');
-    Route::get('/admin/ProductDetails', ProductDetailsComponent::class)->name('admin.product.details');
-    //invoice systeme
-    Route::get('/admin/InvoiceSystem', InvoiceSystemComponent::class)->name('admin.invoice.systeme');
+    
+
+    Route::get('/admin/CustomerSystemeManagement/add', AddCustomerComponent::class)->name('admin.customer.add');
+//invoice systeme
+    Route::get('/admin/InvoiceSystem', InvoiceSystemComponent::class)->name('admin.invoice');
+    Route::get('/admin/InvoiceSystemReel', InvoiceSystemeReelComponent::class)->name('admin.invoice.res.systeme');
     //customer management systeme
+    
     Route::get('/admin/CustomerManagementSysteme/', CustomerManagementSystemComponent::class)->name('admin.customer.management');
+    //services 
+    Route::get('/admin/Services',ServiceComponent::class)->name('admin.services');
+    Route::get('/admin/Services/add',ServiceAddComponent::class)->name('admin.services.add');
 
     // employee crud
     Route::post('/admin/EmpolyeeRegistration/save', [EmployeeController::class, "store"])->name('admin.employee.save');

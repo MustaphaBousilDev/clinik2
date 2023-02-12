@@ -1,4 +1,4 @@
-<div class="dash-content" style="height:100vh">
+<div class="dash-content" >
             <div class="add__form">
                 <form action="">
                     <div class="top__">
@@ -27,10 +27,10 @@
                                 <p class="small__header">Traitement list</p>
                             </div>
                             <div class="products">
-                                <input type="checkbox">
+                                
                                 <div class="content__product flex__between">
                                     <div>
-                                        <img src="dshboard/db_cl-09.png">
+                                    <img src="{{asset('imgs/admin/db_cl-09.png')}}">
                                         <p style="width:116px;">traitement name</p>
                                     </div>
                                     <div>
@@ -52,10 +52,10 @@
                                 </div>
                             </div>
                             <div class="products">
-                                <input type="checkbox">
+                                
                                 <div class="content__product flex__between">
                                     <div>
-                                        <img src="dshboard/db_cl-09.png">
+                                        <img src="{{asset('imgs/admin/db_cl-09.png')}}">
                                         <p style="width:116px;">traitement name</p>
                                     </div>
                                     <div>
@@ -65,10 +65,10 @@
                                         <p>date & time</p>
                                     </div>
                                     <div>
-                                        <p>real time stock (gr)</p>
+                                        <p>price</p>
                                     </div>
                                     <div>
-                                        <p>real time stock (gr)</p>
+                                        <p>processing</p>
                                     </div>
                                 </div>
                                 <div class="actions">
@@ -77,11 +77,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="save__bottom">
-                            <button class="save" type="submit">Save</button>
+                        <div class="" style="display:flex;justify-content:space-between">
+                            <div>
+                                <a href="{{route('admin.invoice')}}" 
+                                style="font-size:22px;display:inline-block;color:#fff;background-color:rgb(59, 177, 245);padding:30px;width:40px;height:40px;display:flex;justify-content:center;align-items:center;border-radius:50%;text-decoration:none">
+                                +
+                                </a>
+                            </div>
+                            <div>
+                            <button style="border:none;outline:none;padding:12px 50px;border-radius:30px;background-color:rgb(59, 177, 245);color:#fff;cursor:pointer;" 
+                                class="save" type="submit">Save</button>
                             <a href="">
-                                <button class="cancel">Cancel</button>
+                                <a href="" class="cancel" style="border:none;outline:none;padding:10px 50px;border-radius:30px;background-color:#dddada;color:#000;cursor:pointer;text-decoration:none;">
+                                    Cancel
+                                </a>
                             </a>
+                            </div>
                         </div>
                     </div>
                 </form>

@@ -1,4 +1,4 @@
-<div class="dash-content" style="height: 100vh;">
+<div class="dash-content">
     <div class="add__form">
         <form wire:submit.prevent="updateInfo">
             @if($errors->any())
