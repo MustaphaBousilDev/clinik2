@@ -14,7 +14,6 @@ class EditProductComponent extends Component
     public $name;
     public $unity;
     public $quantity;
-    public $slug;
     public $user;
     public $product_id;
     public function mount($id){
@@ -33,6 +32,7 @@ class EditProductComponent extends Component
         $product->user_id=Auth::user()->id;
         $product->save();
         session()->flash('message','Product Has Been Updating Succesufly');
+        return redirect()->route("admin.products");
     }
     public function render()
     {

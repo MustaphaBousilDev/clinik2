@@ -24,6 +24,7 @@
                                 </div>
                                 <div class="actions">
                                     <i class="bi bi-eye"></i>
+                                    <i class="bi bi-printer"></i>
                                 </div>
                             </div>
                         </div>

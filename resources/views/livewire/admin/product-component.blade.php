@@ -2,6 +2,11 @@
     
 </style>
 <div class="dash-content">
+    @if(Session::has('message'))
+        <div style="color:rgb(45, 194, 45);text-align:center;padding:15px;background-color: rgb(183, 238, 183);margin-bottom:10px;border-radius:10px" class="" role="alert">
+            {{Session::get('message')}}
+        </div>
+    @endif
     @foreach($products as $product)
     <div class="products">
         <div class="content__product">

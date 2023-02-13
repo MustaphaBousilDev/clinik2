@@ -32,7 +32,8 @@
                 </div>
             </div> -->
             @if (session('message'))
-                <div class="alert alert-info">
+
+                <div class="alert alert-info" style="color:rgb(0, 140, 255);background-color:rgb(171, 214, 249);padding:15px;text-align:center;margin-bottom:10px;border-radius:10px;">
                     {{ session('message') }}
                 </div>
             @endif
@@ -57,7 +58,7 @@
                             <a style="text-decoration:none" href="{{ route('admin.employee.view', $employee->id) }}" class="text-light text-decoration-none"><i class="bi bi-eye"></i></a>
                         </div>
                         </div>
-    @endforeach
+            @endforeach
                     <a style="text-decoration:none" href="{{route('admin.employe.add')}}" class="btn__add">Add New</a>
                 </div>
 

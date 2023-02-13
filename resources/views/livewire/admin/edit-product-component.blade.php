@@ -6,7 +6,7 @@
                         <div class="pro__unity">
                             <div class="pro">
                                 <label class="label__" for="">Product name</label>
-                                <input class="input__" type="text" name="name" wire:model="name" wire:keyup="generateSlug()" >
+                                <input class="input__" type="text" name="name" wire:model="name"  >
                             </div>
                             <div class="pro">
                                 <label class="label__" for="">Unity</label>

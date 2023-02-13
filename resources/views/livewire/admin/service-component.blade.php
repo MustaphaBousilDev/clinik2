@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="actions">
-            <a style="text-decoration:none;" href=""><i class="bi bi-gear-fill"></i></a>
+            <a style="text-decoration:none;" href="{{route('admin.services.edit')}}"><i class="bi bi-gear-fill"></i></a>
             <a style="text-decoration:none;" href=""><i class="bi bi-trash3-fill"></i></a>
             
         </div>

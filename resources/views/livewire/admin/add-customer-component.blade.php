@@ -30,31 +30,6 @@
                                 
                                 <div class="content__product flex__between">
                                     <div>
-                                    <img src="{{asset('imgs/admin/db_cl-09.png')}}">
-                                        <p style="width:116px;">traitement name</p>
-                                    </div>
-                                    <div>
-                                        <p>Choice</p>
-                                    </div>
-                                    <div>
-                                        <p>date & time</p>
-                                    </div>
-                                    <div>
-                                        <p>real time stock (gr)</p>
-                                    </div>
-                                    <div>
-                                        <p>real time stock (gr)</p>
-                                    </div>
-                                </div>
-                                <div class="actions">
-                                    <i class="bi bi-gear-fill"></i>
-                                    <i class="bi bi-trash3-fill"></i>
-                                </div>
-                            </div>
-                            <div class="products">
-                                
-                                <div class="content__product flex__between">
-                                    <div>
                                         <img src="{{asset('imgs/admin/db_cl-09.png')}}">
                                         <p style="width:116px;">traitement name</p>
                                     </div>
@@ -72,7 +47,7 @@
                                     </div>
                                 </div>
                                 <div class="actions">
-                                    <i class="bi bi-gear-fill"></i>
+                                    <a style="text-decoration:none" href="{{route('admin.customer.management.edit')}}"><i class="bi bi-gear-fill"></i></a>
                                     <i class="bi bi-trash3-fill"></i>
                                 </div>
                             </div>

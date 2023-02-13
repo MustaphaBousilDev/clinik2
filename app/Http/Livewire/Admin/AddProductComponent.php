@@ -26,6 +26,7 @@ class AddProductComponent extends Component
         $product->user_id=Auth::user()->id;
         $product->save();
         session()->flash('message','Product Has Been Created Successfully!');
+        return redirect()->route("admin.products");
     }
     public function render(){
         
